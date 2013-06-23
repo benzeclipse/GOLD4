@@ -1,0 +1,38 @@
+/* MIU
+   Term 1306
+   Banchop Ben Kangdouangnhot
+   Project 3
+ */
+   
+   
+html {
+     background-color: #fff;
+}
+body {
+    font-family: "Helvetica", "Arial", sans-serif;
+    background-color: #fff;
+    color: #000000;
+
+
+#range {
+    -webkit-appearance: slider-horizontal;
+    width: 100px;
+    height: 5px;
+}
+
+legend {
+	text-align: center;
+	font-size: 130%;
+	font-weight: bold;
+	color: #0000FF;
+	font-family:"Times New Roman", Times, serif;
+} 
+
+fieldset {
+	margin: .2em 0;
+}
+
+
+
+
+

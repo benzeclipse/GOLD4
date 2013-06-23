@@ -1,0 +1,61 @@
+/* MIU
+   Term 1306
+   Banchop Ben Kangdouangnhot
+   Project 3
+ */
+   
+
+
+label.error {
+
+display:block; margin:10px, 0; color:#cc0000;
+
+}
+
+#formerrorlink {
+
+display:none;
+
+}
+
+
+.ui-page {
+    background: url("http://www.caletaparaisoowners.info/BlueToWhiteGradient.jpg") repeat scroll 50% 100% #112233 !important;
+    color: #04120D !important;
+} 
+
+
+#testform {
+    background: url("http://www.watchphoneglobal.com/sitebuilder/images/Gray_Gradient_Gray_White-1200x1984.jpg") repeat scroll 50% 100% #112233 !important;
+    color: #04120D !important;
+} 
+  
+
+  
+
+  
+/* .ui-bar-b h1{
+    background-color: #013A6F;
+} */
+
+
+    
+    
+  .shadow {
+  -moz-box-shadow:    0px 3px 5px 1px #696969;
+  -webkit-box-shadow: 0px 3px 5px 1px #696969;
+  box-shadow:         0px 2px 3px 1px #696969;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+    
