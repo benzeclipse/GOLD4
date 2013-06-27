@@ -34,10 +34,10 @@ $('#home').on('pageinit', function(){
 		
 		},
 		
-		    submitHandler: function(data){
+		    submitHandler: function(){
 			var data = rbform.serializeArray();
 			
-			getData(data);
+			getData();
 			console.log(data);
 			
 		}
@@ -102,31 +102,39 @@ $('#home').on('pageinit', function(){
 	
 
 	// get random number
-	function getData( data ) {  // passing in "edit" item from tutorial 3.6
+	function getData( key ) {  // passing in "edit" item from tutorial 3.6
 	// if there is no key, this means this is a brand new item and need a new key.
+		
+		if(!key){
+			var getId =  Math.floor(Math.random()*100000001);
+		}else{
+			getId = key;
+		
+		}
 		
 		getRadios();
 		getToggle();
-		var getId =  Math.floor(Math.random()*100000001);
-
-		var data		= {};
 		
-		data.List	= ["Drop down list: ", main('mStuff').value]; 
-		data.Name	= ["Name: ", main('fullname').value];
-		data.email	= ["Email: ", main('email').value]; 
-		data.number	= ["Number: ", main('ssn').value]; 
-		data.toggles = ["Toggle", main('toGG').value];
-		data.zip	= ["Zip Code: ", main('zip').value];
-		data.range = ["Range: ", main('ranges').value];
-		data.date = ["Date: ", main('aDate').value];
-		data.season = ["Season: ", seasonValue];
-		data.concerns = ["Concerns", main('concerns').value];
+
+		var item		= {};
+		item.List	= ["Drop down list: ", $('#mStuff').val()]; 
+		item.Name	= ["Name: ", $('#fullname').val()];
+		item.email	= ["Email: ", $('#email').val()]; 
+		item.number	= ["Number: ", $('#ssn').val()]; 
+		item.toggles = ["Toggle", $('#toGG').val()];
+		item.zip	= ["Zip Code: ", $('#zip').val()];
+		item.range = ["Range: ",$('#ranges').val()];
+		item.date = ["Date: ", $('#aDate').val()];
+		item.season = ["Season: ", seasonValue];
+		item.concerns = ["Concerns", $('#concerns').val()];
 		
 		// save data to local storage! use Stringify to convert our object to a string
-		localStorage.setItem( getId, JSON.stringify(data) );
+		localStorage.setItem( getId, JSON.stringify(item) );
 		alert("Data has been saved!");
 		//console.log('#fullname');
 }
+
+
 
 
 var clearData = function(){

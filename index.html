@@ -43,11 +43,11 @@
 	<div data-role="page" id="home" >
 	
 		<div data-role="header" data-position="fixed" data-theme="b"  >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;" >Ticket Hub</h1> 				 
 		</div> 
 		
-			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search...">
+			<div data-role="content" >		
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -55,27 +55,25 @@
    	 				<li><a href="#nfc">NFC</a></li>
     				<li><a href="#afc">AFC</a></li>
 				</ul>
-			</div>
+			</div> 
 	
 			<div data-role="content" >
 				<a href="#shopTicket" ><img src="images/tickets.jpg" align="right" class="shadow"/></a>
-				<p align="middle" >Voted the #1 </p>
-				<p align="middle">ticket app!</p>
+				<p ><b>Voted #1 ticket app!</b></p>
 			</div>
 			
 				<ul data-role="listview"  data-theme="e" >
 		 			<li>
 		 				<a href="#testform" data-ajax="false"  >
-		 			    <p style="color: red" align="center"><br>Today's specials!</br></p>
+		 			    <p style="color: red" align="center"><br><b>Today's specials!</b></br></p>
 		 			    <img src="images/carolina.jpg" alt="Hat" class="shadow" id="m"/>
-		 			    <p style="color: red" align="middle">Only $19.99!</p>
-		 			    <p style="color: red" align="middle">Order now!</p>
+		 			    <p style="color: red" align="center"><b>Only $19.99!</b></p>
+		 			    <p style="color: red" align="center"><b>Order now!</b></p>
 		 			    </a>
 		 			</li>
 				</ul>
 				
-			<ul data-role="listview" > <!-- List View-->
-						
+			<ul data-role="listview" > <!-- List View-->			
 				<li data-role="list-divider">BROWSE NOW</li> <!-- Dividers -->
 				
 					<li><a href="#shopTicket">	<!-- adding header and lower textview w/buttons-->
@@ -93,7 +91,7 @@
 									<p>Up to the minute sports news</p></a>
 								</li> 
 								
-						<li data-role="list-divider">Details</li> <!-- Dividers -->		
+						<li data-role="list-divider">DETAILS</li> <!-- Dividers -->		
 							<div data-role="collapsible-set" data-corners="false" data-theme="c" data-content-theme="d">
 								<div data-role="collapsible">
       								<h3>How it works</h3>
@@ -114,20 +112,23 @@
    							</div>
    						</div>
 					</ul> 
-						<div align="middle">
-							<p align="middle"><a href="#newsfeed"><img src="images/feed.png" class="shadow"/></a>
+					
+						<div>
+							<p align="center">
+								<a href="#newsfeed"><img src="images/feed.png" class="shadow"/></a>
 								<a href="#facebook"><img src="images/fb.jpg" alt="Hat" class="shadow"/></a>
-								<a href="https://twitter.com/twitter"><img src="images/twitter.png" alt="Hat" class="shadow"/></p></a>
+								<a href="https://twitter.com/twitter"><img src="images/twitter.png" alt="Hat" class="shadow"/></a>
+							</p>
 						</div>
 						
 		<div data-role="footer" >
       	 	 <div data-role="navbar">
          	   	<ul>
-               		 <li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
-               		 <li><a href="#newsfeed" data-icon="info">Feeds</a></li>
-               		 <li><a href="#links" data-icon="gear">About Us</a></li>
-           	 	 </ul>
-       		 </div><!-- /navbar -->
+               		<li><a href="#home" data-icon="home" class="ui-btn-active">Home</a></li>
+               		<li><a href="#newsfeed" data-icon="info">Feeds</a></li>
+               		<li><a href="#links" data-icon="gear">About Us</a></li>
+           	 	</ul>
+       		</div><!-- /navbar -->
 		</div><!-- /footer -->
 	 </div>
 
@@ -136,13 +137,14 @@
 
 	
 	<!-- error page -->   
-	<div data-role="page" id="error" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="error" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			
+			 <h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href=""  data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
-			<div><p align="middle">Under Construction....</p></div>
+			
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -151,7 +153,7 @@
     				<li><a href="#afc">AFC</a></li>
 				</ul>
 			</div>
-			
+			<div><p align="center">Under Construction....</p></div>
 		
 		
   		 <div data-role="footer" data-position="fixed">
@@ -167,12 +169,12 @@
 	
 
 		<!-- Facebook Like-->   
-	<div data-role="page" id="facebook" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="facebook" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -197,12 +199,12 @@
 
 
 	<!-- News Feed -->   
-	<div data-role="page" id="newsfeed" data-id="displayingData" data-add-back-btn="true" > 
+	<div data-role="page" id="newsfeed" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href=""  data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -251,14 +253,13 @@
 
 
 	<!-- About Us -->   
-	<div data-role="page" id="links" data-add-back-btn="true" > 
+	<div data-role="page" id="links" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 		
-		<p align="middle">Links to our resources<p/>
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -268,13 +269,13 @@
 				</ul>
 			</div>
 	
-			
+			<p align="middle"><b>Links to our resources</b><p/>
 			<br>
 				<ul data-role="listview" data-inset="true">
-   					<li><a href="http://benzeclipse.github.com/GOLD3">GOLD APP</a></li>
-   					<li><a href="http://benzeclipse.github.com/BRONZE3">BRONZE APP</a></li>
-   					<li><a href="https://github.com/benzeclipse/GOLD3.git">GIT gold link</a></li>
-   					<li><a href="https://github.com/benzeclipse/BRONZE3.git">GIT bronze link</a></li>
+   					<li><a href="http://benzeclipse.github.com/GOLD4">GOLD APP</a></li>
+   					<li><a href="http://benzeclipse.github.com/BRONZE4">BRONZE APP</a></li>
+   					<li><a href="https://github.com/benzeclipse/GOLD4.git">GIT gold link</a></li>
+   					<li><a href="https://github.com/benzeclipse/BRONZE4.git">GIT bronze link</a></li>
    					<li><a href="#contactUs">CONTACT US</a></li>
 				</ul>
 			</br>
@@ -294,13 +295,13 @@
 
 
 	<!--Sport News Link -->  
-	<div data-role="page" id="news" data-add-back-btn="true"> 		
+	<div data-role="page" id="news" > 		
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -310,7 +311,7 @@
 				</ul>
 			</div>
 		
-				<p align="middle">All the lastet sports news!</p>
+				<p align="center" style="color: white"><b>All the lastet sports news!</b></p>
 				
 				<div>
 				<ul data-role="listview" data-inset="true">
@@ -336,15 +337,13 @@
 
 
    <!--Shop Tickets -->  
-	<div data-role="page" id="shopTicket" data-add-back-btn="true"> 		
+	<div data-role="page" id="shopTicket" > 		
 		<div data-role="header" data-position="fixed" data-theme="b">
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
-			<div data-role="content">
-				<h3 align="middle"><p>Shop Tickets Now!</p><h3>
-			</div>
+
 				<div data-role="content">		
-					<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     					<li><a href="#NFCsouth">Carolina Panthers</a></li>
     					<li><a href="#saints">New Orleans Saints</a></li>
     					<li><a href="#tampa">Tampa Bay</a></li>
@@ -353,6 +352,9 @@
     					<li><a href="#afc">AFC</a></li>
 					</ul>
 				</div>	
+			
+				<h3 align="middle"><p>Shop Tickets Now!</p><h3>
+			
 		<!-- listview with img -->
 		<article data-role="content" >
 		 	<ul data-role="listview" >
@@ -404,16 +406,25 @@
 
 
 	<!-- Football one window drilllist-->   
-	<div data-role="page" id="panther" data-id="displayingData" data-add-back-btn="true"   > 
+	<div data-role="page" id="panther" data-id="displayingData"  > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow" >Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 			
 <!-- <style>
   .ui-page { background:  gray;}
 </style> -->
 	
-
+				<div data-role="content">		
+					<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
+    					<li><a href="#NFCsouth">Carolina Panthers</a></li>
+    					<li><a href="#saints">New Orleans Saints</a></li>
+    					<li><a href="#tampa">Tampa Bay</a></li>
+    					<li><a href="#atlanta">Atlanta Falcons</a></li>
+   	 					<li><a href="#nfc">NFC</a></li>
+    					<li><a href="#afc">AFC</a></li>
+					</ul>
+				</div>	
 	
 		<p align="center">Pick a NFL team</p>
 		
@@ -453,16 +464,14 @@
 
 
 	<!-- Football // NFC teams -->   
-	<div data-role="page" id="nfc" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="nfc" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 				
-		
-				<p align="center">Pick NFC teams</p>
 			
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -471,7 +480,7 @@
     				<li><a href="#afc">AFC</a></li>
 				</ul>
 				</div>
-	
+		<p align="center">Pick NFC teams</p>
 		<article data-role="content" >
 		 	<ul data-role="listview" >
 		 		<li>
@@ -512,13 +521,13 @@
 
 	
 	<!-- Football // AFC teams -->   
-	<div data-role="page" id="afc" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="afc" data-id="displayingData"> 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back"  data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -544,13 +553,13 @@
 
 	
 	<!-- Football // NFC South -->   
-	<div data-role="page" id="south" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="south" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back"  data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 	
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -608,13 +617,13 @@
 
 	
 	<!-- Football // Carolina Panthers!!! -->   
-	<div data-role="page" id="NFCsouth" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="NFCsouth" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href=""  data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -658,13 +667,13 @@
 
 		
 	<!-- Football // Atlanta -->   
-	<div data-role="page" id="atlanta" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="atlanta" data-id="displayingData"> 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back"  data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -708,13 +717,13 @@
 
 		
 	<!-- Football // Saints-->   
-	<div data-role="page" id="saints" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="saints" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>	
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -758,14 +767,14 @@
 	
 			
 	<!-- Football // Tampa Bay-->   
-	<div data-role="page" id="tampa" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="tampa" data-id="displayingData" > 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back"  data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 		
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -811,13 +820,13 @@
 	
 	
 	<!-- single tickets -->   
-	<div data-role="page" id="singleTicket" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="singleTicket" data-id="displayingData"> 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 		
 		 <div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -830,10 +839,10 @@
 
 			
 			<div data-role="content" data-role="fieldcontain">
-				<p align="middle">Single Ticket</p>
+				<p align="center"><b>Single Ticket</b></p>
 				<img src="images/newton.jpg" align="middle" class="fullscreen"/>	
 			</div>
-				<p align="center"><a href="#error">Buy now!</a></p>
+				<p align="center"><a href="#error" style="color: white">Buy now!</a></p>
 					 <div data-role="footer" data-position="fixed">
       					  <div data-role="navbar">
          	  		 <ul>
@@ -848,14 +857,14 @@
 		
 
 	<!-- season tickets -->   
-	<div data-role="page" id="seasonTicket" data-id="displayingData" data-add-back-btn="true"> 
+	<div data-role="page" id="seasonTicket" data-id="displayingData"> 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back"  data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 					
 
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -865,10 +874,10 @@
 				</ul>
 			</div>	
 			
-				<p align="middle">Season Ticket</p>
+				<p align="middle"><b>Season Ticket</b></p>
 
 				<img src="images/psl.jpg" align="middle" class="fullscreen"/>	
-					<p align="center"><a href="#error">Buy now!</a></p>
+					<p align="center"><a href="#error" style="color: white">Buy now!</a></p>
 				<div data-role="footer" data-position="fixed">
       				<div data-role="navbar">
          	 		 <ul>
@@ -884,8 +893,8 @@
 
 		<!--Shop Tickets WallPaper--> 
 		<div data-role="page" id="football">
-			<header data-role="header">
-				<h1 class="shadow">Ticket Hub</h1> 
+			<header data-role="header" data-theme="b" >
+					<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 				<a href="#shopTicket" data-icon="back">back</a>
 			</header>
 				<img src="images/nfl.jpg" class="fullscreen">  <!-- class for resizing images -->  
@@ -893,9 +902,8 @@
 		
 		<!--Shop Tickets BasketBall WallPaper--> 
 		<div data-role="page" id="baksetball">
-			<header data-role="header">
-				<h1 class="shadow">Ticket Hub</h1> 
-				<a href="#shopTicket" data-icon="back">back</a>
+			<header data-role="header" data-theme="b">
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 				</header>
 			 	<img src="images/nba.jpg" class="fullscreen">
 		
@@ -914,9 +922,8 @@
 		<!--Shop Tickets BaseBall WallPaper--> 
 		<div data-role="page" id="baseball">
 			<header data-role="header" data-theme="b">
-				<h1 class="shadow">Ticket Hub</h1> 
-				<a href="#shopTicket" data-icon="back">back</a>
-				</header>
+					<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
+			</header>
 			 	<img src="images/mlb.jpg" class="fullscreen">
 		
 			 <div data-role="footer" data-position="fixed">
@@ -936,14 +943,11 @@
 
 
 	<!-- contact us -->   
-	<div data-role="page" id="contactUs" data-id="displayingData" data-add-back-btn="true"> 
-		
-		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
-		</div>
+	<div data-role="page" id="contactUs" data-id="displayingData" > 
+
 		
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+				<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -952,13 +956,16 @@
     				<li><a href="#afc">AFC</a></li>
 				</ul>
 			</div>	
-		
+				
+		<div data-role="header" data-position="fixed" data-theme="b" >
+			<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
+		</div>
 		
 			<div data-role="content" >
-				<h1><p align="middle">Contact Us</p></h1>
+				<h1><p align="center">Contact Us</p></h1>
 			</div>
-				<p align="center">We can be reach at</p><p align="center"><a href="#error">1-800-888-8888</a></p>
-				<p align="center">or e-mail us at</p><p align="center"><a href="#error">ticketHub@hub.com</a></p>
+				<p align="center">We can be reach at</p><p align="center"><a href="#error" style="color: white">1-800-888-8888</a></p>
+				<p align="center">or e-mail us at</p><p align="center"><a href="#error" style="color: white">ticketHub@hub.com</a></p>
   			<div data-role="footer" data-position="fixed">
       	  <div data-role="navbar">
          	   <ul> 
@@ -974,13 +981,13 @@
 
 
 	<!--Sport Stuff // Grid -->   
-	<div data-role="page" id="sportStuff" data-add-back-btn="true"> 
+	<div data-role="page" id="sportStuff"> 
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 			</div>
 
 			<div data-role="content">		
-				<ul data-role="listview" data-filter="true" data-filter-reveal="true" data-filter-placeholder="Search...">
+			<ul data-role="listview" data-filter="true" data-filter-reveal="true"  data-filter-placeholder="Search..." data-inset="true">
     				<li><a href="#NFCsouth">Carolina Panthers</a></li>
     				<li><a href="#saints">New Orleans Saints</a></li>
     				<li><a href="#tampa">Tampa Bay</a></li>
@@ -1000,11 +1007,11 @@
 				</div>	-->
 							
 			<div class="ui-grid-b">
-				<div class="ui-block-a" align="center" style="color: blue"><p>Jerseys</p><a href="#error" data-ajax="false"><img src="images/jersey.jpeg" class="shadow" /></a></div>	
-				<div class="ui-block-b" align="center" style="color: blue"><p>Polos</p><a href="#error" data-ajax="false"><img src="images/shirt.jpg" class="shadow" /></a></div>	
-				<div class="ui-block-c" align="center" style="color: blue"><p>Caps</p><a href="#error" data-ajax="false"><img src="images/carolina.jpg" class="shadow" /></a></div>	
-				<div class="ui-block-a" align="center" style="color: blue"><p>Sneakers</p><a href="#error" data-ajax="false"><img src="images/sneaker.jpg" class="shadow" /></a></div>	
-				<div class="ui-block-b" align="center" style="color: blue"><p>Gloves</p><a href="#error" data-ajax="false"><img src="images/gloves.jpg" class="shadow" /></a></div>	
+				<div class="ui-block-a" align="center" style="color: white"><p><b>Jerseys</b></p><a href="#error" data-ajax="false"><img src="images/jersey.jpeg" class="shadow" /></a></div>	
+				<div class="ui-block-b" align="center" style="color: white"><p><b>Polos</b></p><a href="#error" data-ajax="false"><img src="images/shirt.jpg" class="shadow" /></a></div>	
+				<div class="ui-block-c" align="center" style="color: white"><p><b>Caps</b></p><a href="#error" data-ajax="false"><img src="images/carolina.jpg" class="shadow" /></a></div>	
+				<div class="ui-block-a" align="center" style="color: white"><p><b>Sneakers</b></p><a href="#error" data-ajax="false"><img src="images/sneaker.jpg" class="shadow" /></a></div>	
+				<div class="ui-block-b" align="center" style="color: white"><p><b>Gloves</b></p><a href="#error" data-ajax="false"><img src="images/gloves.jpg" class="shadow" /></a></div>	
 				
 			</div>
 				
@@ -1021,10 +1028,10 @@
 
 
 	<!-- forms -->   
-	<div data-role="page" id="testform"  data-add-back-btn="true"> 
+	<div data-role="page" id="testform" > 
 	
 		<div data-role="header" data-position="fixed" data-theme="b" >
-			<h1 class="shadow">Ticket Hub</h1>
+				<h1 style="text-align:left; margin-left:10px;">Ticket Hub</h1><a href="" data-rel="back" data-icon="arrow-l" class="ui-btn-right">Back</a>
 		</div>
 		
 			<div data-role="content">
